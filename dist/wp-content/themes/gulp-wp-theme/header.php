@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="<?php bloginfo('language') ?>">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title><?php wp_title() ?></title>
+
+  <!-- Scripts and Styles -->
+  <?php wp_head() ?>
+</head>
+
+<body <?php body_class() ?>>
+
+  <?php get_template_part('header', 'main') ?>
