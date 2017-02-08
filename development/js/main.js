@@ -1,6 +1,13 @@
 import aos from 'aos';
+import fs from 'fastclick';
 
-(function(window, document, $, aos) {
+(function(window, document, $, aos, fs) {
+  if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+      fs.attach(document.body);
+    }, false);
+  }
+
   // Hambuerger Menu
   let hamburger = $('.hamburger');
   let mobileMenu = $('.mobile-menu');
@@ -41,4 +48,4 @@ import aos from 'aos';
     qty.val(value);
   });
 
-})(window, document, jQuery, aos);
+})(window, document, jQuery, aos, fs);
