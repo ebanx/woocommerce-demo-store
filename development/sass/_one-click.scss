@@ -1,0 +1,21 @@
+.one-click {
+  padding: 65px 0;
+
+  color: $color-light;
+
+  background-color: $color-blue;
+
+  h3, p {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.81rem;
+  }
+
+  p {
+    margin: 20px 0 40px;
+
+    font-size: .875rem;
+  }
+}

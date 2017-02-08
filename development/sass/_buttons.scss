@@ -1,0 +1,98 @@
+.btn {
+  display: inline-block;
+  padding: 8px 21px;
+
+  font-family: 'Gilroy-SemiBold';
+  text-decoration: none;
+  color: $color-light;
+  line-height: 1;
+  text-align: center;
+
+  border: 0;
+  border-radius: 100px;
+  background-color: black;
+  transition: all .3s;
+  cursor: pointer;
+  outline: 0;
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--white {
+    color: $color-blue;
+
+    background-color: $color-light;
+  }
+
+  &--small {
+    padding: 8px 21px;
+
+    font-size: 1rem;
+  }
+
+  &--medium {
+    padding: 15px 50px;
+
+    font-size: 1.25rem;
+  }
+
+  &--block {
+    width: 100%;
+    display: block;
+  }
+
+  &--thin {
+    font-family: 'Gilroy-Regular', sans-serif;
+  }
+
+  &--outline {
+    background-color: $color-light;
+  }
+
+  &--outline-green {
+    color: $color-green;
+
+    border: 1px solid $color-green;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    transform: scale(1.05);
+    box-shadow: rgba($color-text, .1) 0 2px 10px 2px;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.button {
+  @extend .btn;
+  @extend .btn--green;
+  @extend .btn--medium;
+}
+
+
+/* Inputs */
+.form-input {
+  padding: 12px 15px;
+
+  font-family: 'Gilroy-Regular';
+  font-size: 0.9375rem;
+  color: $color-gray;
+
+  border: 1px solid rgba($color-gray, .2);
+
+  &[type=number]::-webkit-inner-spin-button,
+  &[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}

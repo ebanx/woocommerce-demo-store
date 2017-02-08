@@ -1,0 +1,49 @@
+.page .page-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  p {
+    margin: 0;
+
+    font-family: 'Gilroy-UltraLight', sans-serif;
+    line-height: 2;
+    font-size: .875rem;
+  }
+
+  .page-title:first-child {
+    padding: 35px 0 20px;
+  }
+
+  > .row:not(:last-child) {
+    margin-bottom: 90px;
+  }
+}
+
+.page-title {
+  margin: 0;
+
+  font-family: 'Gilroy-UltraLight', sans-serif;
+  color: $color-blue;
+  font-size: 3.68rem;
+  line-height: 1.1;
+}
+
+.page-about-gray {
+  background-color: $color-gray-light;
+
+  > div {
+    padding: 0;
+  }
+
+  > div:first-of-type {
+    padding: 40px;
+  }
+
+  p {
+    margin-bottom: 25px !important;
+  }
+}
+
+.section-about-ours .btn {
+  margin-top: 30px;
+}

@@ -1,0 +1,123 @@
+/*!
+Theme Name: EBANX Demo Store
+Theme URI: https://ebanx.com
+Author: Cezar Luiz <cezar@ebanx.com>
+Description: The EBANX Demo Store to demonstrate the WooCommerce plugin
+Version: 1.0.0
+*/
+
+/* Settings */
+@import 'settings';
+
+/* Normalize */
+@import 'normalize.css/normalize';
+
+/* Vendors */
+@import 'include-media/dist/include-media';
+@import 'hamburgers/_sass/hamburgers/hamburgers';
+@import 'aos/dist/aos';
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+/* Grid */
+@import 'flexboxgrid/dist/flexboxgrid.min';
+
+/* Fonts */
+@import 'fonts';
+
+body {
+  overflow-x: hidden;
+
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-text;
+  line-height: 1.4;
+}
+
+.wrap {
+  position: relative;
+
+  width: $width-desktop-base;
+  max-width: 100%;
+  padding: $padding-base;
+  margin: 0 auto;
+
+  &.wrap-center {
+    text-align: center;
+  }
+
+  @include media('>=large') {
+    width: $width-large-base;
+  }
+
+  @include media('>=xlarge') {
+    width: $width-xlarge-base;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons */
+@import 'buttons';
+
+/* Header */
+@import 'header';
+
+/* Icons */
+@import 'icons';
+
+/* Banner */
+@import 'banner';
+
+/* Products */
+@import 'products';
+
+/* Flags */
+@import 'flags';
+
+/* Pages */
+@import 'pages';
+
+/* One Click */
+@import 'one-click';
+
+/* Plugins & Features */
+@import 'plugins';
+
+/* Flash Messages */
+@import 'alerts';
+
+/* Cart */
+@import 'cart';
+
+.input-text {
+  @extend .form-input;
+}
+
+/* Checkout */
+@import 'checkout';
+
+/* My Account */
+@import 'my-account';

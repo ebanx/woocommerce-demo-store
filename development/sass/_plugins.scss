@@ -1,0 +1,234 @@
+.plugin {
+  &__header {
+    position: relative;
+
+    height: 510px;
+
+    color: $color-light;
+
+    background-color: $color-blue;
+
+    .wrap { position: relative; }
+
+    @include media('<=desktop') {
+      height: auto;
+      padding-bottom: 60px;
+
+      text-align: center;
+    }
+  }
+
+  &__master-title {
+    margin-top: 150px;
+    margin-bottom: 30px;
+
+    font-family: 'Gilroy-UltraLight', sans-serif;
+    font-size: 3.68rem;
+
+    animation: enterBottomToTop 1s .6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    + p {
+      font-size: .875rem;
+      line-height: 2;
+
+      animation: enterBottomToTop 1s .8s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    @include media('<=desktop') {
+      margin: 50px 0 20px;
+    }
+  }
+
+  &__pc {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+
+    animation: enterLeftToRight 1s .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @include media('<=desktop') {
+      position: static;
+    }
+  }
+}
+
+@keyframes enterLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes enterBottomToTop {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.plugin__phone {
+  height: 557px;
+
+  .row {
+    height: 557px;
+
+    @include media('<=tablet') {
+      height: auto;
+    }
+  }
+
+  &-image {
+    position: absolute;
+    left: 0;
+    top: -27px;
+    z-index: 10;
+
+    @include media('>=xlarge') {
+      left: 130px;
+    }
+
+    @include media('<=tablet') {
+      position: static;
+
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    line-height: 1.5;
+    font-size: 3rem;
+    font-family: 'Gilroy-UltraLight', sans-serif;
+    letter-spacing: 1px;
+    color: $color-blue;
+
+    @include media('<=tablet') {
+      text-align: center;
+    }
+  }
+
+  @include media('<=tablet') {
+    height: auto;
+
+    padding: 50px 0;
+  }
+}
+
+.plugin__features {
+  padding: 80px 0;
+
+  background-color: $color-gray-light;
+
+  h3 {
+    margin: 0 0 60px;
+
+    text-align: center;
+    font-size: 1.9375rem;
+    color: $color-blue;
+    font-family: 'Gilroy-UltraLight', sans-serif;
+    letter-spacing: 1.22px;
+  }
+}
+
+.features {
+  > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+    .icon {
+      margin-right: 25px;
+      flex: 0 0 50px;
+    }
+
+    p {
+      margin: 0;
+
+      font-size: .875rem;
+      line-height: 2;
+      letter-spacing: .4px;
+    }
+  }
+}
+
+.plugin__tech {
+  padding: 65px 0 80px;
+
+  h3 {
+    margin: 0 0 50px;
+    padding: 0 10%;
+
+    font-size: 1.9375rem;
+    color: $color-blue;
+    line-height: 1.38;
+    letter-spacing: 1.22px;
+    font-family: 'Gilroy-UltraLight', sans-serif;
+    text-align: center;
+
+    @include media('<=tablet') {
+      padding: 0;
+    }
+  }
+
+  p {
+    margin: 45px 0 35px;
+
+    font-family: 'Gilroy-UltraLight', sans-serif;
+    font-size: 1rem;
+    line-height: 2.125;
+    letter-spacing: 1px;
+
+    @include media('<=tablet') {
+      text-align: center;
+    }
+  }
+
+  &-macbook {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+.plugin__notice {
+  padding: 70px 0;
+
+  color: $color-light;
+
+  background-color: $color-blue;
+
+  h3 {
+    margin: 0 0 40px;
+
+    font-family: 'Gilroy-UltraLight', sans-serif;
+    font-size: 1.8125rem;
+  }
+
+  span {
+    display: inline-block;
+    margin: 0 13px;
+
+    @include media('<=tablet') {
+      display: block;
+      margin: 15px 0;
+    }
+  }
+}

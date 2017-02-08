@@ -1,0 +1,50 @@
+.flash-message,
+.woocommerce-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 15px 16px;
+
+  color: $color-light;
+  font-size: 1rem;
+  text-align: center;
+
+  background-color: $color-gray;
+
+  p { margin: 0; }
+
+  &--success {
+    background-color: $color-blue;
+  }
+
+  a, button {
+    margin: 0 20px;
+  }
+}
+
+.woocommerce-message {
+  @extend .flash-message--success;
+}
+
+.woocommerce-message a {
+  @extend .btn;
+  @extend .btn--white;
+}
+
+.woocommerce-error {
+  padding: 15px 16px;
+  width: 100%;
+  margin-bottom: 40px;
+
+  color: $color-light;
+  font-size: 1rem;
+
+  background-color: $color-wrong;
+
+  li {
+    padding: 5px 0;
+
+    line-height: 1.5;
+  }
+}

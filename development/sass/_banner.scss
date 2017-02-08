@@ -1,0 +1,53 @@
+.banner {
+  height: 550px;
+
+  color: $color-light;
+
+  background-image: url(images/banner-home.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__info {
+    max-width: 530px;
+    padding-top: 140px;
+  }
+
+    &__info-title,
+    &__info-sub {
+      margin: 0;
+    }
+
+    &__info-title {
+      margin-bottom: 10px;
+
+      font-size: 2.625rem;
+      font-family: 'Gilroy-UltraLight', sans-serif;
+      line-height: 1.1;
+    }
+
+    &__info-sub {
+      margin-bottom: 40px;
+
+      font-family: 'Gilroy-Medium', sans-serif;
+      font-size: 1.375rem;
+    }
+
+  @include media('<=tablet') {
+    height: auto;
+    padding: 50px 0;
+
+    text-align: center;
+
+    background-image: none;
+    background-color: $color-blue;
+
+    &__info {
+      padding: 0;
+      max-width: none;
+    }
+
+    &__info-title {
+      margin-bottom: 20px;
+    }
+  }
+}

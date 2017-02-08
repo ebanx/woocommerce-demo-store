@@ -1,0 +1,62 @@
+/**
+ * Box Model
+ */
+$width-desktop-base: 1110px;
+$width-large-base: 1200px;
+$width-xlarge-base: 1400px;
+$padding-base: 0 16px;
+
+/**
+ * Fonts
+ */
+$font-size-base: 16px;
+$font-family-base: 'Gilroy-Regular', sans-serif;
+
+/**
+ * Colors
+ */
+$color-blue: #34A3D8;
+$color-blue-soft: #F6F9FC;
+$color-blue-hard: #2F4A74;
+$color-green: #BFD45E;
+$color-text: #000;
+$color-light: #fff;
+$color-gray: #525252;
+$color-gray-light: #F5F5F5;
+$color-wrong: #D64541;
+
+/**
+ * Break Points
+ * Smartphone < 768px
+ * 48em - 768px
+ * 64em - 1024px
+ * 75em - 1200px
+ */
+$breakpoints: (
+  'phone': 20em,
+  'tablet': 48em,
+  'desktop': 64em,
+  'large': 75em,
+  'xlarge': 90em
+);
+
+/**
+ * Hamburgers
+ */
+$hamburger-layer-width: 30px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-color: $color-blue-hard;
+$hamburger-types: (
+  3dx
+);
+
+/**
+ * Mixins
+ */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

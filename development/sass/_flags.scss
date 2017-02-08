@@ -1,0 +1,30 @@
+.flags {
+  &__container {
+    padding: 50px;
+
+    background-color: $color-blue-soft;
+  }
+
+  &__text {
+    margin: 0;
+
+    font-size: 1.1rem;
+    color: $color-blue-hard;
+  }
+
+  &__country {
+    margin-left: 15px;
+  }
+
+  @include media('<=tablet') {
+    text-align: center;
+
+    &__container {
+      padding: 20px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}
