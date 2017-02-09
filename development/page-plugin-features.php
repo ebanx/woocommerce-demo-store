@@ -46,38 +46,44 @@
           </div>
           <div
             class="col-xs-12 col-sm-5 col-sm-offset-2">
-            <i class="icon icon--extra-fields"></i>
-            <p><strong>Extra fields that are added automatically</strong> for payments made in Brazil or Chile where customers must provide more information to local regulatory authorities.</p>
+            <i class="icon icon--orders"></i>
+            <p><strong>Create orders & request refunds directly in WooCommerce</strong>, without needing any other integration or plugin.</p>
           </div>
           <div
             class="col-xs-12 col-sm-5">
-            <i class="icon icon--one-click"></i>
-            <p><strong>One-click purchases</strong> which allow your client to skip the checkout process.</p>
+            <i class="icon icon--sell"></i>
+            <p>Choose which <strong>payment methods are displayed</strong> at checkout.</p>
           </div>
           <div
             class="col-xs-12 col-sm-5 col-sm-offset-2">
+            <i class="icon icon--one-click"></i>
+            <p><strong>One-click purchases</strong> which allow your client to skip the checkout process by saving their own credit card information.</p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-5">
             <i class="icon icon--plugin"></i>
             <p><strong>Everything you need in one plugin</strong>, you don’t have to install any external plugins or extensions.</p>
           </div>
           <div
+            class="col-xs-12 col-sm-5 col-sm-offset-2">
+            <i class="icon icon--capture"></i>
+            <p><strong>Capture mode</strong> that when activated allows you to collect payments after a manual review and set a maximum number of installments and select an expiration date for cash payments.</p>
+          </div>
+          <div
             class="col-xs-12 col-sm-5">
+            <i class="icon icon--extra-fields"></i>
+            <p><strong>Extra fields that are added automatically</strong> for payments made in Brazil or Chile where customers must provide more information to local regulatory authorities.</p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-5 col-sm-offset-2">
             <i class="icon icon--responsive"></i>
             <p><strong>Responsive and adaptable Checkout payment form</strong>, that nicely adapts to all mobile screen sizes and themes.</p>
           </div>
-          <div
-            class="col-xs-12 col-sm-5 col-sm-offset-2">
-            <i class="icon icon--capture"></i>
-            <p><strong>Capture mode</strong> that when activated allows you to collect payments after a manual review.</p>
-          </div>
-          <div
-            class="col-xs-12 col-sm-5">
-            <i class="icon icon--sandbox"></i>
-            <p><strong>Sandbox mode</strong> for testing.</p>
-          </div>
-          <div
-            class="col-xs-12 col-sm-5 col-sm-offset-2">
-            <i class="icon icon--sell"></i>
-            <p>Sell to over <strong>20M EBANX Wallet users.</strong></p>
+        </div>
+
+        <div class="row center-xs middle-xs">
+          <div class="col-sm-12">
+            <h4>And sell to over 20M EBANX Wallet users.</h4>
           </div>
         </div>
       </div>
@@ -98,9 +104,9 @@
             >
           </div>
           <div class="col-xs-12 col-md-5">
-            <p>For more detailed information visit our Developer’s Academy for step-by-step guides, API references, and integration options or <a href="https://goo.gl/MCf9dO" target="_blank">schedule a call with a Business Development Executive</a>.</p>
+            <p>For more detailed information visit our Developer’s documentation for <strong>step-by-step guides, API references</strong>, and <strong>integration options</strong> or <a href="https://goo.gl/MCf9dO" target="_blank">schedule a call with a Business Development Executive</a>.</p>
 
-            <a href="https://goo.gl/4qvqGI" target="_blank" class="btn btn--green btn--thin btn--medium">Go to EBANX Developers Academy</a>
+            <a href="https://goo.gl/4qvqGI" target="_blank" class="btn btn--purple btn--thin btn--medium">Go to EBANX Developers</a>
           </div>
         </div>
       </div>

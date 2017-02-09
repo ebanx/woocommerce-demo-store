@@ -12,7 +12,7 @@
 
         <p>EBANX is a leader in local payment solutions across the fastest growing markets in Latin America servicing both merchants and consumers. We are located in Curitiba, Brazil. Our multicultural team and our latin roots enable us to understand the payments market better than any other competitor.</p>
 
-        <a href="https://goo.gl/DbuoGS" target="_blank" class="btn btn--green btn--medium">Know more about EBANX</a>
+        <a href="https://goo.gl/DbuoGS" target="_blank" class="btn btn--purple btn--medium">Know more about EBANX</a>
       </div>
     </div>
 

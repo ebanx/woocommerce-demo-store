@@ -48,4 +48,7 @@ import fs from 'fastclick';
     qty.val(value);
   });
 
+  // Select
+  $('.select').select2();
+
 })(window, document, jQuery, aos, fs);

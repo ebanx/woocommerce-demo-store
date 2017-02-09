@@ -338,6 +338,8 @@ form {
 
 .select {
   @extend .form-input;
+  border: 0;
+  padding: 0;
 }
 
 span.required,

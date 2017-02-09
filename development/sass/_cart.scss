@@ -36,7 +36,7 @@
         td > .button {
           @extend .btn--block;
           @extend .btn--outline;
-          @extend .btn--outline-green;
+          @extend .btn--outline-purple;
         }
       }
     }
@@ -168,7 +168,7 @@
 
   .button {
     @extend .btn--outline;
-    @extend .btn--outline-green;
+    @extend .btn--outline-purple;
     @extend .btn--small;
   }
 }

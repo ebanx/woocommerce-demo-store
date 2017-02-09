@@ -154,7 +154,7 @@
       <?php else: ?>
         <p>Your cart is empty.</p>
 
-        <a href="<?php bloginfo('url') ?>" class="btn btn--green btn--small">Ok, go home.</a>
+        <a href="<?php bloginfo('url') ?>" class="btn btn--purple btn--small">Ok, go home.</a>
       <?php endif ?>
     </div>
   </section>

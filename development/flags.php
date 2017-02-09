@@ -10,7 +10,7 @@
           </p>
         </div>
         <div class="col-xs-12 col-sm-4 col-sm-offset-1">
-          <a href="https://goo.gl/q5Wkve" target="_blank" class="btn btn--medium btn--green btn--block">Download the plugin</a>
+          <a href="https://goo.gl/q5Wkve" target="_blank" class="btn btn--medium btn--purple btn--block">Download the plugin</a>
         </div>
       </div>
     </div>

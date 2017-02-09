@@ -225,10 +225,12 @@
   background-color: $color-gray-light;
 }
 
-.product_title,
-div[itemprop="offers"],
-.product_meta,
-.cart .quantity,
-.single_add_to_cart_button:not(.ebanx-one-click-button) {
-  display: none;
+.single-product {
+  .product_title,
+  div[itemprop="offers"],
+  .product_meta,
+  .cart .quantity,
+  .single_add_to_cart_button:not(.ebanx-one-click-button) {
+    display: none;
+  }
 }

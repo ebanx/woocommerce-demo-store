@@ -24,7 +24,7 @@
           <button type="button" class="product-single__qty-plus">+</button>
         </div>
 
-        <button type="submit" class="btn btn--green btn--medium">Add to cart</button>
+        <button type="submit" class="btn btn--purple btn--medium">Add to cart</button>
       </form>
 
       <?php do_action( 'woocommerce_single_product_summary' ); ?>

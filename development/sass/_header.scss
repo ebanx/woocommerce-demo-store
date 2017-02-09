@@ -191,7 +191,7 @@ body {
       }
 
       &:nth-child(1) { transition: all .4s .1s; background-color: $color-blue; }
-      &:nth-child(2) { transition: all .4s .3s; background-color: $color-green; }
+      &:nth-child(2) { transition: all .4s .3s; background-color: $color-purple; }
       &:nth-child(3) { transition: all .4s .5s; background-color: $color-blue-hard; }
     }
   }

@@ -114,14 +114,15 @@
   p {
     margin: 0;
 
-    line-height: 1.5;
-    font-size: 3rem;
-    font-family: 'Gilroy-UltraLight', sans-serif;
+    line-height: 1.15;
+    font-size: 3.6875rem;
+    font-family: 'Gilroy-UltraLightItalic', sans-serif;
     letter-spacing: 1px;
     color: $color-blue;
 
     @include media('<=tablet') {
       text-align: center;
+      font-size: 2rem;
     }
   }
 
@@ -145,6 +146,14 @@
     color: $color-blue;
     font-family: 'Gilroy-UltraLight', sans-serif;
     letter-spacing: 1.22px;
+  }
+
+  h4 {
+    margin-bottom: 0;
+
+    font-size: 1.6875rem;
+    letter-spacing: 1.06px;
+    font-family: 'Gilroy-UltraLight', sans-serif;
   }
 }
 

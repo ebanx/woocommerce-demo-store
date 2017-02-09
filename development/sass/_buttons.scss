@@ -15,8 +15,8 @@
   cursor: pointer;
   outline: 0;
 
-  &--green {
-    background-color: $color-green;
+  &--purple {
+    background-color: $color-purple;
   }
 
   &--white {
@@ -50,10 +50,10 @@
     background-color: $color-light;
   }
 
-  &--outline-green {
-    color: $color-green;
+  &--outline-purple {
+    color: $color-purple;
 
-    border: 1px solid $color-green;
+    border: 1px solid $color-purple;
   }
 
   &:hover {
@@ -70,7 +70,7 @@
 
 .button {
   @extend .btn;
-  @extend .btn--green;
+  @extend .btn--purple;
   @extend .btn--medium;
 }
 
@@ -95,4 +95,17 @@
     display: block;
     width: 100%;
   }
+}
+
+.ebanx-credit-card-label,
+.ebanx-label {
+  overflow: visible !important;
+
+  cursor: pointer;
+
+  @include clearfix;
+}
+
+.woocommerce-checkout-payment {
+  font-size: .875rem;
 }

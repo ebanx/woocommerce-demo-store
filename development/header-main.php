@@ -44,7 +44,7 @@
       </a>
 
       <!-- Download Plugin -->
-      <a href="https://goo.gl/q5Wkve" target="_blank" class="header__download btn btn--small btn--green">Download the plugin</a>
+      <a href="https://goo.gl/q5Wkve" target="_blank" class="header__download btn btn--small btn--purple">Download the plugin</a>
     </div>
   </section>
 </header>

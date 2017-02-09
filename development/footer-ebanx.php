@@ -9,7 +9,7 @@
               <li class="footer__links-item"><a href="https://www.ebanx.com/business/en/solutions" target="_blank">Solutions</a></li>
               <li class="footer__links-item"><a href="https://www.ebanx.com/business/en/pricing" target="_blank">Pricing</a></li>
               <li class="footer__links-item"><a href="http://www.ebanx.com/business/en/blog" target="_blank">Blog</a></li>
-              <li class="footer__links-item"><a href="https://developers.ebanx.com/" target="_blank">Developers Academy</a></li>
+              <li class="footer__links-item"><a href="https://developers.ebanx.com/" target="_blank">Developers</a></li>
               <li class="footer__links-item"><a href="https://www.ebanx.com/business/en/contact" target="_blank">Contact</a></li>
             </ul>
           </div>
@@ -73,6 +73,6 @@
 
 <section class="policy">
   <div class="wrap">
-    <p>Consumer advisory - EBANX Pte. Ltd. the holder of EBANX`s stored value facility, does not require the approval of the Monetary Authority of Singapore. Users are advised to read the terms and conditions CAREFULLY. View service restrictions on the compliance page.</p>
+    <p>Consumer advisory - EBANX Pte. Ltd. the holder of EBANX`s stored value facility, does not require the approval of the Monetary Authority of Singapore. Users are advised to read the <a href="https://www.ebanx.com/business/en/terms" target="_blank" title="Visit our terms and conditions">terms and conditions</a> CAREFULLY. View service restrictions on the <a href="https://www.ebanx.com/business/en/compliance" target="_blank" title="Visit our compliance page">compliance page.</a></p>
   </div>
 </section>
