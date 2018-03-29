@@ -1,0 +1,84 @@
+// Mixins
+// --------------------------------------------------
+
+// Utilities
+@import "mixins/hide-text.less";
+@import "mixins/opacity.less";
+@import "mixins/image.less";
+@import "mixins/labels.less";
+@import "mixins/reset-filter.less";
+@import "mixins/resize.less";
+@import "mixins/responsive-visibility.less";
+@import "mixins/size.less";
+@import "mixins/tab-focus.less";
+@import "mixins/text-emphasis.less";
+@import "mixins/text-overflow.less";
+@import "mixins/vendor-prefixes.less";
+
+// Components
+@import "mixins/iconbox.less";
+@import "mixins/alerts.less";
+@import "mixins/buttons.less";
+@import "mixins/panels.less";
+@import "mixins/pagination.less";
+@import "mixins/list-group.less";
+@import "mixins/nav-divider.less";
+@import "mixins/forms.less";
+@import "mixins/progress-bar.less";
+@import "mixins/table-row.less";
+
+// Skins
+@import "mixins/background-variant.less";
+@import "mixins/border-radius.less";
+@import "mixins/gradients.less";
+
+// Layout
+@import "mixins/center-block.less";
+@import "mixins/nav-vertical-align.less";
+@import "mixins/grid-framework.less";
+@import "mixins/grid.less";
+
+
+.heading-center-width-line() {
+  font-size: @font-size-h3;
+  text-align: center;
+  padding: 0.6em 1em;
+  margin: 0 0 2em;
+  position: relative;
+  text-transform: uppercase;
+  @media (max-width: @screen-xs) {
+    font-size: @font-size-large;
+  }
+  &:after {
+    content: '';
+    width: 130px;
+    height: 1px;
+    background: @border-color-base;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    .translate(-50%,0);
+  }
+  &:before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border: 1px solid @border-color-base;
+    background: #fff;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%) rotate(45deg);
+    transform: -moz-translateX(-50%) rotate(45deg);
+    transform: -webkit-translateX(-50%) rotate(45deg);
+    transform: -ms-translateX(-50%) rotate(45deg);
+    transform: -o-translateX(-50%) rotate(45deg);
+  }
+  @media (max-width: @screen-xs) {
+    font-size: @font-size-xbase;
+  }
+}
+
+
+

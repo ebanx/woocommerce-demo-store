@@ -41,3 +41,5 @@ jspm_packages
 bower_components
 
 .DS_Store
+
+dist/wp-content/uploads

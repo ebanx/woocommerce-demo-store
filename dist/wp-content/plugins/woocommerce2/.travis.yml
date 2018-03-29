@@ -1,0 +1,81 @@
+dist: trusty
+sudo: required
+
+language: php
+
+php:
+  - 5.6
+
+services:
+  - docker
+
+cache:
+  apt: true
+  directories:
+    - $TRAVIS_BUILD_DIR/vendor
+    - $TRAVIS_BUILD_DIR/tests/node_modules
+    - $HOME/.composer/cache
+
+env:
+  matrix:
+    - TEST_COUNTRY=argentina
+    - TEST_COUNTRY=brazil
+    - TEST_COUNTRY=chile
+    - TEST_COUNTRY=colombia
+    - TEST_COUNTRY=ecuador
+    - TEST_COUNTRY=mexico
+    - TEST_COUNTRY=peru
+
+install: composer update
+
+script:
+  - bash ./tests/bin/test.sh
+
+stages:
+  - lint
+  - unit
+  - test
+  - release
+  - deploy
+
+jobs:
+  include:
+    - stage: lint
+      env:
+        - TEST_COUNTRY=
+      script:
+        - bash .scripts/phpcs.sh
+    - stage: unit
+      env:
+        - TEST_COUNTRY=
+      script:
+        - phpunit
+    - stage: release
+      script:
+        - bash <(curl -s https://codecov.io/bash)
+        - bash .scripts/before_deploy.sh
+        - cd $TRAVIS_BUILD_DIR
+        - zip -r /tmp/ebanx-payment-gateway-for-woocommerce ./* -x "*.git*" "*tests*" "*_vendor*"
+      env:
+        - TEST_COUNTRY=
+      deploy:
+        - provider: releases
+          api_key:
+            secure: FDxpvr3Lr93SVGSgzuZYHjFLLp3iakioaqG7i9mGvyoOjMp9QUIhRDZuRZHc7HSBtE+qcV8VrkVGRxmT8sxWUs38nLMGDybYEi7NeQ2V6xm1lSNIqbIzK2nIKIoiU/zNWkV6jSUVVFpgvFIPDIrZMWHgmcNQ31XHbohtNZA9NHSC1MRE+0204vBaRd2Qk8K1T6E0yOepSQQz+AE1y80OkdsBNJoF25A51IcCmKXyxAeuY3x9R7tko2+pJq7uwsjg5CMEoSMwoLw25TwteoCgvdKXhGEsiRAu/1XFd+Qsi2mWKGGge5uycd3x2wCiau8+zpXkTrA5cdutQLB/SDDulad17tGvrRBNaPr1pNAfj3pMwG/UIbWe7AHOCWS9MHhizBICRIc7GV8IFSjUfZTEovjuhF3N0Zw7c6T1um+JfKDp2Zbl8QHYB0z12XMgLPC8xyM0P0LTbN8xtF8CrS8BsYdwX4O+GIkQijiEloJdxlCXIAVl6m1cHpdrjnNGbX4ucK1xaUveaASsZSG9DkObII+QsolKvLwMqNucvCxNAQYUBgieSu8MuKcmEWMbwMtElcCjPK4swZgB3RW9kXtoZBb2qdEJgedB+oXItFu398E5eVBNeOS6TK6tVElxDnLGod7iuCrqQm9d8ud5rEsAHmFaf+lAt9Mn4T616BlT2/4=
+          file: /tmp/ebanx-payment-gateway-for-woocommerce.zip
+          skip_cleanup: true
+          on:
+            tags: true
+            all_branches: true
+    - stage: deploy
+      script:
+        - bash .scripts/before_deploy.sh
+      env:
+        - TEST_COUNTRY=
+      deploy:
+        - provider: script
+          skip_cleanup: true
+          script: ./deploy.sh
+          on:
+            tags: true
+            all_branches: true

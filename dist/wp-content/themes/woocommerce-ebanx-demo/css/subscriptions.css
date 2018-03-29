@@ -1,0 +1,28 @@
+table.variations {
+	margin:20px auto 30px;
+}
+
+table.variations select#plan {
+	background:white;
+}
+
+table.variations label {
+	color:#52ABDA;
+}
+
+.single_variation_wrap span.price span.woocommerce-Price-amount {
+	margin:0 0 50px;
+	font-size:1.8125rem;
+	letter-spacing:2.18px;
+}
+
+.product .product__meta a span {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	color:white;
+	padding:3px 0;
+	text-transform:uppercase;
+	font-weight: bold;
+}

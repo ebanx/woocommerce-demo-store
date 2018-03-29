@@ -217,6 +217,7 @@ function wp_generate_attachment_metadata( $attachment_id, $file ) {
 		 * @since 4.7.0
 		 *
 		 * @param array $fallback_sizes An array of image size names.
+		 * @param array $metadata       Current attachment metadata.
 		 */
 		$fallback_sizes = apply_filters( 'fallback_intermediate_image_sizes', $fallback_sizes, $metadata );
 
@@ -251,7 +252,15 @@ function wp_generate_attachment_metadata( $attachment_id, $file ) {
 			$editor = wp_get_image_editor( $file );
 
 			if ( ! is_wp_error( $editor ) ) { // No support for this type of file
-				$uploaded = $editor->save( $file, 'image/jpeg' );
+				/*
+				 * PDFs may have the same file filename as JPEGs.
+				 * Ensure the PDF preview image does not overwrite any JPEG images that already exist.
+				 */
+				$dirname = dirname( $file ) . '/';
+				$ext = '.' . pathinfo( $file, PATHINFO_EXTENSION );
+				$preview_file = $dirname . wp_unique_filename( $dirname, wp_basename( $file, $ext ) . '-pdf.jpg' );
+
+				$uploaded = $editor->save( $preview_file, 'image/jpeg' );
 				unset( $editor );
 
 				// Resize based on the full size image, rather than the source.
@@ -334,7 +343,7 @@ function wp_read_image_metadata( $file ) {
 	if ( ! file_exists( $file ) )
 		return false;
 
-	list( , , $sourceImageType ) = getimagesize( $file );
+	list( , , $sourceImageType ) = @getimagesize( $file );
 
 	/*
 	 * EXIF contains a bunch of data we'll probably never need formatted in ways
@@ -363,10 +372,10 @@ function wp_read_image_metadata( $file ) {
 	 * as caption, description etc.
 	 */
 	if ( is_callable( 'iptcparse' ) ) {
-		getimagesize( $file, $info );
+		@getimagesize( $file, $info );
 
 		if ( ! empty( $info['APP13'] ) ) {
-			$iptc = iptcparse( $info['APP13'] );
+			$iptc = @iptcparse( $info['APP13'] );
 
 			// Headline, "A brief synopsis of the caption."
 			if ( ! empty( $iptc['2#105'][0] ) ) {

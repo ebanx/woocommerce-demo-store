@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 82:80
+    environment:
+      WORDPRESS_DB_PASSWORD: demostore
+      WORDPRESS_DB_NAME: wordpress
+    links:
+      - mysql
+    volumes:
+      - /Users/ebanx/plugins/woocommerce-demo-store/dist/wp-content:/var/www/html/wp-content
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: demostore
+      MYSQL_DATABASE: wordpress

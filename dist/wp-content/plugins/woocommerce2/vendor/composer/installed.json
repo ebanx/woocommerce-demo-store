@@ -1,0 +1,52 @@
+[
+    {
+        "name": "ebanx/ebanx",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ebanx-integration/ebanx-php.git",
+            "reference": "54e80524b31067a1868a93023b305adf97925dad"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ebanx-integration/ebanx-php/zipball/54e80524b31067a1868a93023b305adf97925dad",
+            "reference": "54e80524b31067a1868a93023b305adf97925dad",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "codeclimate/php-test-reporter": "dev-master",
+            "ext-xdebug": ">=2.2",
+            "phpunit/phpunit": "4.4.*"
+        },
+        "time": "2018-01-03T15:57:47+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Ebanx": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "authors": [
+            {
+                "name": "Gustavo Henrique Mascarenhas Machado",
+                "email": "guhemama@gmail.com"
+            }
+        ],
+        "description": "EBANX PHP library",
+        "homepage": "https://ebanx.com",
+        "keywords": [
+            "api",
+            "ebanx",
+            "payment processing"
+        ]
+    }
+]

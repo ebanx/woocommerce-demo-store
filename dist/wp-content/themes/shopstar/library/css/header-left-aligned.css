@@ -1,0 +1,14 @@
+/*--------------------------------------------------------------
+Shopstar - Header Left-Aligned Styling
+--------------------------------------------------------------*/
+
+.site-header.left-aligned .branding {
+	text-align: left;
+	display: inline-block;
+}
+.site-header.left-aligned .branding .description {
+	text-align: left;
+}
+.main-navigation .menu-help-container {
+	text-align: left;
+}

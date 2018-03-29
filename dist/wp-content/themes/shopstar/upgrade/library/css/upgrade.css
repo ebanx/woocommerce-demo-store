@@ -1,0 +1,256 @@
+
+.upgrade-page-wrap {
+	color: #9a9a9a;
+	padding: 0;
+}
+.upgrade-page-wrap h1 {
+	padding: 9px 15px 20px 0;
+}
+.upgrade-page-wrap h2 {
+	margin: 0.6em 0;
+	padding: 0;
+	color: #414141;
+	font-size: 1.3em;
+	font-size: 21px;
+	font-family: Montserrat;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.upgrade-page-wrap h2.small {
+	margin: 1.4em 0 0 0;
+	text-transform: none;
+	font-size: 15px;
+}
+.upgrade-page-wrap h2.small.no-top-margin {
+	margin-top: 0;
+}
+.upgrade-page-wrap a {
+	color: #6bbbc9;
+}
+.upgrade-page-wrap a:hover {
+	text-decoration: none;
+}
+.upgrade-page-wrap p {
+	margin: 0.6em 0;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: lato;
+}
+.upgrade-page-wrap a.button,
+.upgrade-page-wrap span.button {
+	height: 38px;
+	width: 177px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 38px;
+	text-decoration: none;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	text-align: center;
+	box-shadow: none;
+	border: none;
+	padding: 0;
+	color: #FFFFFF;
+	transform: none !important;
+}
+.upgrade-page-wrap a.button:hover,
+.upgrade-page-wrap a.button:focus {
+	color: #FFFFFF;
+}
+.upgrade-page-wrap a.button:active {
+	box-shadow: none;
+}
+
+
+.button.red {
+	background-color: #ff7e80;
+}
+.button.red:hover,
+.button.red:focus,
+.button.red:active {
+	background-color: #bd5d5f;
+}
+
+.upgrade-page-wrap img.screenshot {
+	margin: 0;
+	vertical-align: top;
+	max-width: 100%;
+}
+.call-to-action {
+	max-width: 600px;
+	padding: 20px 0 30px 0;
+	text-align: center;
+	margin: 0 0 40px 0;
+	font-family: lato;
+	font-size: 17px;
+	line-height: 38px;
+	color: #414141;
+}
+.call-to-action.grey {
+	background-color: #e6e6e6;
+}
+.call-to-action strong {
+	font-size: 21px;
+}
+.call-to-action a.button,
+.call-to-action span.button {
+	margin: 0 0 0 10px;
+}
+
+.upgrade-page-wrap ul.reasons {
+	list-style: none;
+	margin: 1.8em 0;
+	padding: 0;
+	width: 100%;
+	max-width: 370px;
+}
+.upgrade-page-wrap ul.reasons li {
+	display: inline-block;
+	width: 100%;
+	background-color: #e6e6e6;
+	padding: 15px 0 15px 0;
+	margin: 0 0 0.8em 0;
+}
+.upgrade-page-wrap ul.reasons li .icon {
+	float: left;
+	display: inline-block;
+	margin: 0 12px 0 15px;
+}
+.upgrade-page-wrap ul.reasons li h3 {
+	margin: 10px 0 0 89px;
+	padding: 0;
+	color: #414141;
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 1.2em;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.upgrade-page-wrap ul.reasons li p {
+	margin: 0 0 0 89px;
+	padding: 0 15px 0 0;
+	color: #9a9a9a;
+}
+
+ul.ticks {
+	display: block;
+	list-style: none;
+	margin: 1em 0 1em 0;
+	padding-left: 0;
+}
+ul.ticks.blue li {
+	background: url('../images/bullet-tick-blue.png') left 5px no-repeat;
+	padding: 0 0 0 20px;
+	margin: 0 0 12px 0;
+}
+
+.two-column {
+	max-width: 1050px;
+}
+.two-column .column {
+	float: left;
+}
+.two-column .column.column-one {
+	width: 60%;
+	margin: 0 4% 0 0;
+}
+.two-column .column.column-two {
+	width: 36%;
+}
+
+.indented {
+	margin-left: 16px;
+}
+
+.box {
+	margin: 0 0 30px;
+}
+
+.testimonials-container {
+	position: relative;
+	margin: 8px 0 10px;
+	min-height: 140px;
+}
+.testimonials-container.loading {
+	height: 100px;
+	overflow: hidden;
+	background-image: url(../images/loader.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.testimonials-container .prev,
+.testimonials-container .next {
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 25px;
+	position: absolute;
+	top: 50%;
+	margin: -6px 0 0;
+	z-index: 4;
+	cursor: pointer;
+	opacity: 0;
+	
+	-webkit-transition: opacity 0.2s ease 0s;
+    -moz-transition: opacity 0.2s ease 0s;
+    -ms-transition: opacity 0.2s ease 0s;
+    -o-transition: opacity 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s;
+}
+.testimonials-container .prev {
+	background-position: left 0;
+	left: -17px;
+}
+.testimonials-container .next {
+	background-position: right 0;
+	right: -17px;
+}
+.testimonials-container.loading .testimonials {
+	visibility: hidden;
+}
+.testimonial {
+	float: left;
+	color: #6bbbc9;
+}
+.testimonial .quote {
+	font-style: italic;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: lato;	
+}
+.testimonial .name {
+	padding: 8px 0 2px 0;
+	margin: 0 0 8px;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 1071px) {
+	.upgrade-page-wrap {
+		padding: 0 3px 0 5px;
+	}
+	.two-column .column.column-one {
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.two-column .column.column-two {
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.upgrade-page-wrap img.screenshot {
+		display: block;
+		margin: 0 auto;
+	}
+	.call-to-action {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.upgrade-page-left,
+	.upgrade-page-right {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+}

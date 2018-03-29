@@ -1,0 +1,255 @@
+.dh-tooltip-form {
+	height: 100%;
+}
+
+.dh-tooltip-form .submitbox {
+	background: none repeat scroll 0 0 #fcfcfc;
+	border-top: 1px solid #dfdfdf;
+	bottom: 0;
+	left: 0;
+	padding: 8px 16px;
+	position: absolute;
+	right: 0;
+	height: auto;
+}
+
+.dh-tooltip-options {
+	height: calc(100% - 92px);
+	height: -moz-calc(100% - 92px);
+	height: -webkit-calc(100% - 92px);
+	overflow: auto;
+	padding-bottom: 2px;
+}
+
+.dh-tooltip-options>div {
+	padding: 5px 0;
+}
+
+.dh-tooltip-form p.howto {
+	margin: 3px 0;
+}
+
+.dh-tooltip-form label span {
+	display: inline-block;
+	max-width: 24%;
+	padding-right: 5px;
+	text-align: right;
+	width: 24%;
+	vertical-align: top;
+}
+
+.dh-tooltip-form label textarea, .dh-tooltip-form label select,
+	.dh-tooltip-form label input[type="text"] {
+	margin-top: 5px;
+	width: 70%;
+}
+
+#dh-tooltip-cancel {
+	float: left;
+	line-height: 25px;
+}
+
+#dh-tooltip-cancel a {
+	color: #a00;
+	text-decoration: none;
+}
+
+#dh-tooltip-update {
+	float: right;
+	line-height: 23px;
+}
+
+.field-megamenu-fullwidth,
+.field-megamenu-columns,
+.field-megamenu-sidebar,
+.field-megamenu-title
+{
+	display: none;
+}
+.enable-megamenu .field-megamenu-fullwidth,
+.enable-megamenu .field-megamenu-columns,
+.enable-megamenu .field-megamenu-sidebar,
+.enable-megamenu .field-megamenu-title{
+	display: block;
+}
+
+.dh-mega-badge-thumb img{
+	max-width:100%;
+	max-height:100%;
+}
+
+
+.dh-message {
+	padding: 40px;
+	margin: 20px auto;
+	text-align: center;
+	max-width: 500px;
+	background: #fff;
+}
+.dh-message.error{
+	max-width:none;
+	padding-bottom: 30px;
+}
+.dh-message-title {
+	line-height: 1.3;
+	margin: 20px 0;
+}
+.dh-message.import-error .dh-message-title{
+	margin: 10px 0 20px;
+	color:#bb5857;
+}
+.dh-message.success .dh-message-title {
+	margin: 10px 0 20px;
+	color: #59ba41;
+}
+
+.dh-message.success .dh-message-text {
+	font-size: 16px;
+}
+
+.dh-importer {
+	padding: 30px;
+	margin: 20px 20px 0 0;
+	background: #fff;
+}
+
+@media only screen and (max-width: 782px) {
+	.dh-importer {
+		margin: 10px 10px 0 0;
+	}
+}
+
+@media only screen and (max-width: 568px) {
+	.dh-importer {
+		padding: 10px;
+	}
+}
+
+.dh-importer-title {
+	text-align: left;
+	line-height: 1.3;
+	margin: 5px 0 25px;
+}
+
+.dh-importer-list {
+	margin-bottom: 30px;
+}
+.dh-importer-list select{
+	width:100%;
+}
+.dh-importer-items {
+	position: relative;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top:30px;
+	margin-bottom:60px;
+	float:left;
+	width:100%;
+}
+.dh-importer-item{
+	float:left;
+	margin-right:30px;
+	margin-bottom:30px;
+	text-align:center;
+}
+.dh-importer-item img{
+	max-width:200px;
+	border:3px solid;
+}
+.dh-importer-item label{
+	display:block;
+	margin-top:10px;
+	font-weight:bold;
+}
+@media only screen and (max-width: 767px) {
+	.dh-importer-item {
+		width: 100%;
+	}
+}
+.dh-importer-item-radio {
+	position: absolute;
+	visibility: hidden;
+}
+
+.dh-importer-item-title {
+	margin: 0;
+	padding: 5px 0 20px;
+}
+
+.dh-importer-item-preview {
+	display: block;
+	padding: 20px 20px 65px;
+	border: 1px solid transparent;
+}
+
+.dh-importer-item:hover .dh-importer-item-preview {
+	border-color: #ccc;
+}
+
+.dh-importer-item-radio:checked+.dh-importer-item-preview {
+	border-color: #59ba41;
+	box-shadow: 0 0 0 2px #59ba41 inset;
+}
+
+.dh-importer-item-radio:checked+.dh-importer-item-preview:before {
+	displaY: block;
+	content: "\f147";
+	font: 40px/1 'dashicons';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #59ba41;
+	color: #fff;
+}
+
+.dh-importer-item-radio:checked+.dh-importer-item-preview h2 {
+	color: #59ba41;
+}
+
+.dh-importer-item-preview img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.dh-importer-item-btn {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 25px;
+}
+
+.dh-importer-option {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.dh-importer-option-title {
+	font-weight: 600;
+}
+
+.dh-importer-option-desc {
+	opacity: 0.5;
+}
+
+.dh-importer-error {
+	margin: 25px 0;
+	padding: 20px 20px 10px;
+	background: #FFD9D9;
+	color: #A24141;
+}
+
+.dh-importer-error p {
+	margin: 0 0 10px;
+}
+
+.dh-importer-note {
+	margin: 25px 0;
+	padding: 20px 20px 10px;
+	background: #DBF2FF;
+	color: #5e6a76;
+}
+
+.dh-importer-note p {
+	margin: 0 0 10px;
+}

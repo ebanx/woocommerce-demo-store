@@ -1,0 +1,69 @@
+
+.customize-control input[type=text].pixels,
+.customize-control input[type=text].percentage,
+.customize-control input[type=text].milliseconds {
+	width: 50px;
+}
+
+#customize-theme-controls #accordion-section-colors h3:hover,
+#customize-theme-controls #accordion-section-shopstar-fonts h3:hover,
+#customize-theme-controls #accordion-section-shopstar-layout h3:hover,
+#customize-theme-controls #accordion-section-shopstar-header h3:hover,
+#customize-theme-controls #accordion-section-shopstar-mobile-menu h3:hover,
+#customize-theme-controls #accordion-section-shopstar-slider h3:hover,
+#customize-theme-controls #accordion-section-shopstar-blog h3:hover,
+#customize-theme-controls #accordion-section-shopstar-website h3:hover,
+#customize-theme-controls #accordion-section-shopstar-footer h3:hover,
+#customize-theme-controls #accordion-section-shopstar-social h3:hover {
+    background-color: #4b8b99;
+	color: #FFFFFF;
+}
+
+#customize-theme-controls #accordion-section-colors:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-fonts:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-layout:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-header:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-mobile-menu:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-slider:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-blog:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-website:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-footer:hover>.accordion-section-title:after,
+#customize-theme-controls #accordion-section-shopstar-social:hover>.accordion-section-title:after {
+	color: #FFFFFF !important;
+}
+
+#accordion-section-colors.control-section.open h3,
+#accordion-section-shopstar-fonts.control-section.open h3,
+#accordion-section-shopstar-layout.control-section.open h3,
+#accordion-section-shopstar-header.control-section.open h3,
+#accordion-section-shopstar-mobile-menu.control-section.open h3,
+#accordion-section-shopstar-slider.control-section.open h3,
+#accordion-section-shopstar-blog.control-section.open h3,
+#accordion-section-shopstar-website.control-section.open h3,
+#accordion-section-shopstar-footer.control-section.open h3,
+#accordion-section-shopstar-social.control-section.open h3 {
+    background-color: #4b8b99 !important;
+	color: #FFFFFF;
+}
+
+.out_the_box_upgrade {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.out_the_box_upgrade .button {
+	background: none #5cb85c;
+	border-color: #4cae4c;
+	box-shadow: none;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.out_the_box_upgrade .button:hover,
+.out_the_box_upgrade .button:focus {
+	background: none #449d44;
+	border-color: #398439;
+	box-shadow: none;
+	color: #fff;
+}

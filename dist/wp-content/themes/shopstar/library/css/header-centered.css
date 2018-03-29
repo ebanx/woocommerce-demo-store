@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+Shopstar - Header Centered Styling
+--------------------------------------------------------------*/
+
+.site-header.centered .branding {
+	text-align: center;
+}
+.site-header.centered .branding .description {
+	text-align: center;
+}
+.main-navigation .container {
+	text-align: center;
+}
+.main-navigation .menu-help-container {
+	text-align: center;
+}
